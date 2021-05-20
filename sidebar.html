@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SideMenu</title>
+    <link rel="stylesheet" href="sidebar.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    
+</head>
+<body>
+    <nav class="slide_menu">
+        <div class="bar">
+            <i class="fas fa-bars"></i>
+            <!-- <div class="close_btn">
+                <i class="fas fa-times"></i>
+            </div> -->
+            
+        </div>
+        <h4>Side Menu</h4>
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services<i class="fas fa-chevron-right"></i></a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+
+
+
+    <script src="jquery-1.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.bar').click(function(){
+                $('this').toggleClass('close');
+                $('.slide_menu').toggleClass('show');
+            })
+        })
+    </script>
+</body>
+</html>
